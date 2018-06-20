@@ -1,0 +1,253 @@
+body {
+	font-weight: bold;
+	background-color: #3dc7f4;
+}
+
+a,p,h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	display:inline-block;
+}
+
+div,h1, p {
+	margin: 0px;
+	padding: 0px;
+}
+
+.header>a {
+	transform: skewY(2deg) rotate(-2deg);
+}
+
+.selectBox {
+	margin: 5px 0;
+	border: none;
+    overflow: hidden;
+	background-color: black;
+}
+
+.selectBox select {
+	padding: 5px;
+	font-size: 1em;
+	color: white;
+	font-weight: bold;
+    width: 100%;
+	outline: 0;
+    border: none;
+    box-shadow: none;
+	background-color: black;
+}
+
+option {
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.selectBox select:focus {
+	background-color: black;
+}
+
+.page {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0px;
+	overflow: hidden;
+}
+
+.header {
+	margin-top: 15px;
+	position: relative;
+	width: 100%;
+	background-color: #e73567;
+	padding: 5px;
+	margin-bottom: 0;
+	z-index: 6;
+	color: white;
+}
+
+.header>h1 {
+	transform: skewY(2deg) rotate(-2deg);
+	font-size: 1.75em;
+}
+
+.header2 {
+	font-size: 1.25em;
+	text-align: center;
+	position: absolute;
+	bottom: -40px;
+	right: -50%;
+	width: 150%;
+	background-color: black;
+	color: white;
+	padding: 150px 0px 5px 0px;
+	margin-bottom: 0;
+	z-index: -20;
+	transform: skewY(14deg);
+}
+
+.header2>p {
+	margin-left: 5%;
+	transform: skewY(-12deg) rotate(12deg);
+}
+
+.flex {
+	display: flex;
+}
+
+.spacer {
+	flex: 1;
+}
+
+.navBarHidden {
+	position: absolute;
+	padding: none;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-color:  #3dc7f4;
+}
+
+.navBarHeaderContainer{
+	position: fixed;
+	padding: none;
+	background-color:  #3dc7f4;
+	top: -75px;
+	padding-top: 100px;
+	width: 100%;
+	z-index: 5;
+	transform: skewY(-2deg);
+	overflow: visible;
+}
+
+.navBar {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	border: none;
+	border-top: 10px solid #e73567;
+	border-bottom: 10px solid #e73567;
+	padding: 10px 0px;
+	width: 100%;
+	background-color:  black;
+	z-index: 8;
+	overflow: visible;
+}
+
+.backgroundImg {
+	position: absolute;
+	width: 400px;
+	top: 50px;
+	left: -5px;
+	z-index: 1;
+	opacity: 1;
+	transform: skewY(2deg) rotate(-20deg);
+}
+
+.navBtn {
+	background-color: black;
+	color: white;
+	padding: 5px;
+	outline: 0;
+	font-size: 1em;
+	text-decoration: none;
+	font-weight: bold;
+	border: none;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.navBar>.navBtn {
+	transform: skewY(2deg) rotate(-2deg);
+}
+
+.navBtn:hover {
+	background-color: white;
+	color: black;
+}
+
+.content {
+	overflow-y: scroll;
+	position: absolute;
+	width: 100%;
+	max-width: 800px;
+	z-index: 1;
+	height: 85%;
+	bottom: 0px;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+}
+
+.darken {
+	position: absolute;
+	opacity: 1;
+	top: 0;
+	bottom: 0;
+	z-index: -2;
+}
+
+.yellow {
+	background-color: #fff200;
+	z-index: -1;
+	left: 15%;
+	right: 15%;
+	transform: skewX(-10deg);
+}
+
+.messages,.login {
+	position: relative;
+	z-index: 1;
+	overflow-y: visible;
+	max-height: 50%;
+	position: absolute;
+	bottom: 25px;
+	width: 100%;
+}
+
+::-webkit-scrollbar{
+    width: 0px
+}
+::-webkit-scrollbar-track-piece{
+    background-color: transparent
+}
+.flex {
+	padding: 5px;
+	margin-bottom: 15px;
+	background-color:  #e73567;
+}
+
+.m {
+	background-color: white;
+	padding: 5px;
+	border-radius: 5px;
+	font-size: 1.35em;
+}
+
+.leftTilt {
+	transform: skewY(-2deg);
+}
+
+.rightTilt {
+	transform: skewY(2deg);
+}
+
+.empty {
+	height: 50px;
+	width: 50px;
+}
+
+.leftTilt>* {
+	transform: skewY(2deg) rotate(-2deg);
+}
+
+.rightTilt>* {
+	transform: skewY(-2deg) rotate(2deg);
+}
+
+.flex>*{
+	padding: 5px 0px;
+	max-width: 80%;
+	text-align:center;
+	margin: 0 auto;
+}
